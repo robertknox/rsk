@@ -1,12 +1,11 @@
 import React from 'react';
 import './SearchBar.css';
 
-
-
 const sortByOptions = {
 'Best Match': 'best_match',
-  'Highest Rated': 'rating',
-  'Most Reviewed': 'review_count'
+  'News': 'rating',
+  'Books': 'books',
+  'Mailing List': 'review_count'
 }
 
 
@@ -71,13 +70,6 @@ class SearchBar extends React.Component {
     <ul>
       {this.renderSortByOptions()} 
     </ul>
-  </div>
-  <div className="SearchBar-fields">
-    <input onClick={this.handleTermChange} placeholder="Search Businesses" />
-    <input onClick={this.handleLocationChange} placeholder="Where?" />
-  </div>
-  <div  className="SearchBar-submit">
-    <a onClick={this.handleSearchYelp} >Let's Go</a>
   </div>
 </div>
 
