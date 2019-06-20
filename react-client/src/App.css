@@ -2,11 +2,20 @@
   text-align: center;
   background-image: url('./BBB.jpg');
   background-size: cover;
+
+  padding: 10px;
+  font-style: italics; 
+  font-family: italics; 
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+
+.App h1 {
+	font-style: italics; 
+	font-family: italics; 
 }
 
 .App-header {
@@ -16,12 +25,14 @@
 
   background-size: cover;
   height: 950px;
-  padding: 20px;
+  padding: 5px;
   color: white;
 }
 
 .App-intro {
   font-size: large;
+  font-style: italics; 
+  font-family: italics; 
 }
 
 @keyframes App-logo-spin {

@@ -2,10 +2,15 @@ import React from 'react';
 import './SearchBar.css';
 
 const sortByOptions = {
-'Best Match': 'best_match',
-  'News': 'rating',
+  'About The Author': 'author',
+  'Galley':'galley',
+  'Guest Book': 'guest_book',
+  'News Letter': 'news_letter',
+  'News': 'news',
   'Books': 'books',
-  'Mailing List': 'review_count'
+  'Audio Books': 'audio_books',
+  'Music': 'music',
+  'Mailing List': 'mailing_list'
 }
 
 
