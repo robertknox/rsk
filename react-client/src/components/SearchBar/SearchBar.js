@@ -47,6 +47,15 @@ class SearchBar extends React.Component {
 
 	handleSortByChange( sortByVal){
 		this.setState({sortBy: sortByVal });
+
+		switch (sortByVal){
+			case "author":
+				console.log("handleSortByChange: AboutAuthor");
+				break;
+			case "music":
+				console.log("handleSortByChange: music");
+				break;
+		}
 	}
 
 	handleTermChange( event ){
