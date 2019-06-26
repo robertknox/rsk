@@ -14,7 +14,7 @@ const sortByOptions = {
 }
 
 
-class SearchBar extends React.Component {
+class Author extends React.Component {
 
 
 	constructor(props){
@@ -79,16 +79,13 @@ class SearchBar extends React.Component {
 
 	render(){
 	return (
-<div className="SearchBar">
-  <div className="SearchBar-sort-options">
-    <ul>
-      {this.renderSortByOptions()} 
-    </ul>
-  </div>
-</div>
+		<div className="Author">
+  			<div className="SearchBar-sort-options">
+  			</div>
+		</div>
 
 	)
 	}
 }
 
-export default SearchBar
+export default Author 
