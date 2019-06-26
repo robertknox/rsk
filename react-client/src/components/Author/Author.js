@@ -81,6 +81,7 @@ class Author extends React.Component {
 	return (
 		<div className="Author">
   			<div className="SearchBar-sort-options">
+				<h1> Robert Knox is an author of crime novels.</h1>
   			</div>
 		</div>
 
