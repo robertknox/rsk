@@ -1,6 +1,5 @@
 import React from 'react';
-import './SearchBar.css';
-import Author from '../Author/Author.js'
+import './Author.css';
 
 const sortByOptions = {
   'About The Author': 'author',
