@@ -7,7 +7,7 @@ const sortByOptions = {
   'Galley':'galley',
   'Guest Book': 'guest_book',
   'News Letter': 'news_letter',
-  'News': 'news',
+  'News': 'author',
   'Books': 'books',
   'Audio Books': 'audio_books',
   'Music': 'music',
@@ -73,7 +73,8 @@ class SearchBar extends React.Component {
 	return (
 		Object.keys(sortByOptions).map(sortByOption => {
 			let sortByOptionValue = sortByOptions[sortByOption];
-			return <li key={sortByOptionValue} onClick={this.handleSortByChange.bind(this, sortByOptionValue)} className={this.getSortByClass(sortByOptionValue)}>{sortByOption}</li>;
+		{/*	return <li key={sortByOptionValue} onClick={this.handleSortByChange.bind(this, sortByOptionValue)} className={this.getSortByClass(sortByOptionValue)}>{sortByOption}</li>; */}
+                        return <li><a href='http://www.google.com'   > {sortByOptionValue} </a></li>
 		})
 	)
 	}
@@ -83,9 +84,10 @@ class SearchBar extends React.Component {
 <div className="SearchBar">
   <div className="SearchBar-sort-options">
     <ul>
-      {this.renderSortByOptions()} 
+      {this.renderSortByOptions()}
     </ul>
   </div>
+  <Author/>
 </div>
 
 	)

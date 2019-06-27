@@ -12,7 +12,6 @@ class App extends Component {
           <h2>RobertSelkirkKnox.com</h2>
 	  <h3>Official WebSite</h3>
 	  <SearchBar />  
-	  <Author />  
         </div>
       </div>
     );
