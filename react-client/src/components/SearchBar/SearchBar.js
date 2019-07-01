@@ -90,7 +90,6 @@ export class SearchBar extends React.Component {
       {this.renderSortByOptions()}
     </ul>
   </div>
-  <Author/>
 </div>
 
 	)
