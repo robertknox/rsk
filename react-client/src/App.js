@@ -19,7 +19,7 @@ class App extends React.Component  {
                 <div className="App">
 			<Router >
 			<div>
-				<SearchBar />
+				<SearchBar/>
                         </div>
 
 				<Route path="/Music" component={Music}/>

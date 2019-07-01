@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchBar.css';
+import './SearchBar.css'
 import Author from '../Author/Author.js'
 import Books from '../Books/Books.js'
 import News from '../News/News.js'

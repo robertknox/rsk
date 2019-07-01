@@ -1,32 +1,19 @@
 .App {
   text-align: center;
-  background-image: url('./BBB.jpg');
-  background-size: cover;
+  height: 1000px; 
 
-  padding: 10px;
+  background: url('./BBB.jpg') center center fixed; 
+  background-image: url('./BBB.jpg') ;
+
+  padding: 30px;
   font-style: italics; 
   font-family: italics; 
+  background-size: cover;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-}
-
-.App h1 {
-	font-style: italics; 
-	font-family: italics; 
-}
-
-.App-header {
-  background-color: #222;
-  background-image: url('./BBB.jpg');
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  height: 950px;
-  padding: 5px;
-  color: white;
 }
 
 .App-intro {
