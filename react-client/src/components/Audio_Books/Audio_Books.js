@@ -8,6 +8,7 @@ export class Audio_Books extends React.Component {
 		return (
 			<div className="Audio_Books">
 				Audio_Books
+				Look for the Audio book of Barcelona, The Beautiful Bones, available from audible.com. Also, the audio book of San Francisco, Sirens In The Ferns, will be available on audibile.com shortly.
 			</div>
 
 		)

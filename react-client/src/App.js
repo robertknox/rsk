@@ -29,10 +29,6 @@ class App extends React.Component  {
 				<Route path="/Audio_Books" component={Audio_Books}/>
 				<Route path="/Mailing_List" component={Mailing_List}/>
 			</Router>
-
-			<div>
-				<h1> My site </h1>
-			</div>
 		</div>
   		);
 	}
