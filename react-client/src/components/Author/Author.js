@@ -1,4 +1,5 @@
 import React from 'react';
+import './Author.css';
 
 export class Author  extends React.Component {
 	render(){

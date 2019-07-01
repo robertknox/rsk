@@ -1,5 +1,8 @@
 .Author {
+  color: white;
+  position: absolute;
+  background-color: black;  
+  padding: 30px;
 
-clear left;
-clear right;
+text-align: center;
 }

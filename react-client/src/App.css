@@ -2,13 +2,11 @@
   text-align: center;
   height: 100vh; 
 
-  background: url('./BBB.jpg') center center fixed; 
-  background-image: url('./BBB.jpg') ;
-
+  background: URL('./BBB.jpg') center center fixed; 
+  background-size: cover;
   padding: 30px;
   font-style: italics; 
   font-family: italics; 
-  background-size: cover;
 }
 
 .App-logo {

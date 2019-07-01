@@ -1,9 +1,10 @@
-.Books {
+.Music {
+
  color: white;
-  position: absolute;
+  position: auto ;
   background-color: black;
   padding: 30px;
+
+text-align: center;
+
 }
-
-
-
