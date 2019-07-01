@@ -1,21 +1,24 @@
 import React from 'react';
 import './SearchBar.css';
 import Author from '../Author/Author.js'
+import Books from '../Books/Books.js'
+import News from '../News/News.js'
+import Blog from '../Blog/Blog.js'
+import Mailing_List from '../Mailing_List/Mailing_List.js'
+import {NavLink} from 'react-router-dom';
+
 
 const sortByOptions = {
-  'About The Author': 'author',
-  'Galley':'galley',
-  'Guest Book': 'guest_book',
-  'News Letter': 'news_letter',
-  'News': 'author',
-  'Books': 'books',
-  'Audio Books': 'audio_books',
-  'Music': 'music',
-  'Mailing List': 'mailing_list'
+  'About The Author': 'Author',
+  'News': 'News',
+  'Books': 'Books',
+  'Audio_Books': 'Audio_Books',
+  'Music': 'Music',
+  'Mailing_List': 'Mailing_List'
 }
 
 
-class SearchBar extends React.Component {
+export class SearchBar extends React.Component {
 
 
 	constructor(props){
@@ -74,7 +77,7 @@ class SearchBar extends React.Component {
 		Object.keys(sortByOptions).map(sortByOption => {
 			let sortByOptionValue = sortByOptions[sortByOption];
 		{/*	return <li key={sortByOptionValue} onClick={this.handleSortByChange.bind(this, sortByOptionValue)} className={this.getSortByClass(sortByOptionValue)}>{sortByOption}</li>; */}
-                        return <li><a href='http://www.google.com'   > {sortByOptionValue} </a></li>
+                        return <li><NavLink to={"/" +  sortByOptionValue}> {sortByOptionValue} </NavLink></li>
 		})
 	)
 	}
@@ -94,4 +97,3 @@ class SearchBar extends React.Component {
 	}
 }
 
-export default SearchBar

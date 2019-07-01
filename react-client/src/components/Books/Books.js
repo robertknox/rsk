@@ -1,18 +1,13 @@
 import React from 'react';
-import './SearchBar.css';
 
 
-class Books  extends React.Component {
-
-
-	constructor(props){
-	}
-
+export class Books  extends React.Component {
 
 
 	render(){
 		return (
 			<div className="Books">
+				Books
 			</div>
 
 		)
