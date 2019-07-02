@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import './Mailing_List.css';
 
-export class Mailing_List extends Component {
+export class Sign_In extends Component {
 
 	constructor(props) {
     		super(props);
@@ -26,14 +25,14 @@ export class Mailing_List extends Component {
 
 	render(){
 	   return (
-		<div className="Mailing_List">
+		<div className="Sign_In">
 			<form onSubmit={this.handleSubmit}>
-				<h1> Enter name and email to receive updates on upcoming events. </h1>
+				<h1> Sign In to access account.</h1>
 				<br/>
 				<label>
-					Name:
+					User_Name:
 					<input type="text" value="foo" />
-					Email:
+					Password:
 					<input type="text" /> 
 				</label>
 				<input type="submit" value="Submit" />
@@ -45,4 +44,4 @@ export class Mailing_List extends Component {
 }
 
 
-export default Mailing_List;
+export default Sign_In;

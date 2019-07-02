@@ -5,11 +5,14 @@ import Books from '../Books/Books.js'
 import News from '../News/News.js'
 import Blog from '../Blog/Blog.js'
 import Mailing_List from '../Mailing_List/Mailing_List.js'
+import Sign_In from '../Sign_In/Sign_In.js'
 import {NavLink} from 'react-router-dom';
 
 
 const sortByOptions = {
   'About The Author': 'Author',
+  'Home': 'Home',
+  'Sign_In': 'Sign_In',
   'News': 'News',
   'Books': 'Books',
   'Audio_Books': 'Audio_Books',
