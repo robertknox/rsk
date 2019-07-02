@@ -10,14 +10,14 @@ import {NavLink} from 'react-router-dom';
 
 
 const sortByOptions = {
-  'About The Author': 'Author',
   'Home': 'Home',
-  'Sign_In': 'Sign_In',
+  'About The Author': 'Author',
   'News': 'News',
   'Books': 'Books',
   'Audio_Books': 'Audio_Books',
   'Music': 'Music',
-  'Mailing_List': 'Mailing_List'
+  'Mailing_List': 'Mailing_List',
+  'Sign_In': 'Sign_In'
 }
 
 

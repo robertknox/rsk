@@ -12,4 +12,4 @@ export class Home  extends React.Component {
 }
 
 
-export default Author;
+export default Home;

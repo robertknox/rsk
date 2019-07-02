@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Home} from './components/Home/Home.js'
+import {Sign_In} from './components/Sign_In/Sign_In.js'
 import {Music} from './components/Music/Music.js'
 import {Books} from './components/Books/Books.js'
 import {News} from './components/News/News.js'
@@ -22,7 +24,9 @@ class App extends React.Component  {
 				<SearchBar/>
                         </div>
 
+				<Route path="/Home" component={Home}/>
 				<Route path="/Music" component={Music}/>
+				<Route path="/Sign_In" component={Sign_In}/>
 				<Route path="/Author" component={Author}/>
 				<Route path="/News" component={News}/>
 				<Route path="/Books" component={Books}/>
