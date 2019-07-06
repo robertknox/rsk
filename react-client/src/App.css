@@ -1,12 +1,15 @@
 .App {
   text-align: center;
-  height: 100vh; 
 
   background: URL('./BBB.jpg') center center fixed; 
   background-size: cover;
+
+  background-color: black;
   padding: 30px;
   font-style: italics; 
-  font-family: italics; 
+  font-family: italics;
+
+  height: 100vh;
 }
 
 .App-logo {

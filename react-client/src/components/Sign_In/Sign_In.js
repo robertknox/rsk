@@ -28,11 +28,11 @@ export class Sign_In extends Component {
 	   return (
 		<div className="Sign_In">
 			<form onSubmit={this.handleSubmit}>
-				<h1> Sign In to access account.</h1>
+				<h3> Sign In to access account.</h3>
 				<br/>
 				<label>
 					User_Name:
-					<input type="text" value="foo" />
+					<input type="text" value="" />
 					Password:
 					<input type="text" /> 
 				</label>

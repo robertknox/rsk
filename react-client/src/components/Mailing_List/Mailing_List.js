@@ -28,11 +28,11 @@ export class Mailing_List extends Component {
 	   return (
 		<div className="Mailing_List">
 			<form onSubmit={this.handleSubmit}>
-				<h1> Enter name and email to receive updates on upcoming events. </h1>
+				<h3> Enter name and email to receive updates on upcoming events. </h3>
 				<br/>
 				<label>
 					Name:
-					<input type="text" value="foo" />
+					<input type="text" value="" />
 					Email:
 					<input type="text" /> 
 				</label>

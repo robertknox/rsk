@@ -3,6 +3,7 @@
   position: absolute;
   background-color: black;
   padding: 30px;
+  background: URL('./BBBCover.png') center center fixed;
 }
 
 
