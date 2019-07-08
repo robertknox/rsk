@@ -1,7 +1,7 @@
 import React from 'react';
 import './Books.css';
 import './BBBCover.png';
-import './BBB.jpg';
+import './BBB3.jpg';
 
 
 export class Books  extends React.Component {
@@ -21,7 +21,7 @@ export class Books  extends React.Component {
 				{art.map((item) => (
 					<div className="ABook">
 					<h1>{item} </h1>
-					<img src='./BBB.png' />
+					<img src={require('./BBB3.jpg')} />
 					</div>
 					))} 
 			</div>
