@@ -10,7 +10,8 @@ export class Books  extends React.Component {
 
 	render(){
 
-		let art = [ 	 'jumper',  'red', 'medium', ];
+		let art = [ 'jumper',  'red', 'medium', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' ];
+
 		let  test = art[1];
 
 		return (
@@ -18,12 +19,14 @@ export class Books  extends React.Component {
 				Books.
 				Barcelona, The Beautiful Bones can be puchased at amazon.com in both e-book and hardcopy.
 				San Francisco, Sirens In The Ferns, will be released shortly.
+				<div className="TheBooks">
 				{art.map((item) => (
 					<div className="ABook">
 					<h1>{item} </h1>
-					<img src={require('./BBB3.jpg')} />
+					<img src={require('./BBBCover.png')} />
 					</div>
 					))} 
+				</div>
 			</div>
 
 		)
