@@ -7,7 +7,13 @@ export class Sign_In extends Component {
     		super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleFormSubmit = this.handleFormSubmit.bind(this);
+		this.handleChangeUser = this.handleChangeUser.bind(this);
+		this.handleChangePass = this.handleChangePass.bind(this);
     		this.handleClearForm = this.handleClearForm.bind(this);
+		this.state = {
+			user:  "foo",
+			pass:  "foo",
+		}
   }
 
   /* This life cycle hook gets executed when the component mounts */
@@ -20,10 +26,19 @@ export class Sign_In extends Component {
   }	
 
 	handleSubmit(e){
-		alert("MailingList: handleSubmit");
+		alert("Sign_In: handleSubmit:user:pass:" + this.state.user + ":" + this.state.pass);
 		e.preventDefault();
 	}
 
+        handleChangeUser(e){
+		alert("handleChange:handleSubmit:user:pass:" + e.target.value );
+		this.setState({user : e.target.value});
+        }
+
+        handleChangePass(e){
+		alert("handleChange:handleSubmit:user:pass:" + e.target.value );
+		this.setState({pass : e.target.value});
+        }
 	render(){
 	   return (
 		<div className="Sign_In">
@@ -32,9 +47,9 @@ export class Sign_In extends Component {
 				<br/>
 				<label>
 					User_Name:
-					<input type="text" value="" />
+					<input type="text" value={this.state.user} onChange={this.handleChangeUser} />
 					Password:
-					<input type="text" /> 
+					<input type="text" value={this.state.pass} onChange={this.handleChangePass}/> 
 				</label>
 				<input type="submit" value="Submit" />
 				

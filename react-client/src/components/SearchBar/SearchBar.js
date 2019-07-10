@@ -16,9 +16,6 @@ const sortByOptions = {
   'Books': 'Books',
   'Audio_Books': 'Audio_Books',
   'Music': 'Music',
-  'Blog': 'Blog',
-  'Mailing_List': 'Mailing_List',
-  'Sign_In': 'Sign_In'
 }
 
 
