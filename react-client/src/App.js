@@ -11,8 +11,48 @@ import {Blog} from './components/Blog/Blog.js'
 import {Mailing_List} from './components/Mailing_List/Mailing_List.js'
 import {Author} from './components/Author/Author.js'
 import {SearchBar} from './components/SearchBar/SearchBar.js'
-import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
+import {BrowserRouter as Router, Link, NavLink, Redirect, Switch } from 'react-router-dom';
 import  Route from 'react-router-dom/Route';
+
+class NoMatch extends React.Component {
+	render(){
+		return (
+			<div className="NoMatch" >
+				<h1>404 Not Found</h1>;
+			</div>
+		)
+	}
+}
+
+const fakeAuth = {
+  isAuthenticated: false,
+  authenticate(cb) {
+    this.isAuthenticated = true
+    setTimeout(cb, 100)
+  },
+  signout(cb) {
+    this.isAuthenticated = false
+    setTimeout(cb, 100)
+  }
+}
+
+
+
+  {/*
+	 <Route {...rest} render={(props) => (
+    fakeAuth.isAuthenticated === true
+      ? <Component {...props} />
+      : <Redirect to='/Sign_In' />
+  )} /> 
+  */}
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={(props) => (
+    fakeAuth.isAuthenticated === true
+      ? <Redirect to='/Sign_In' />
+      : <Redirect to='/Sign_In' />
+  )} />
+)
 
 
 class App extends React.Component  {
@@ -24,7 +64,7 @@ class App extends React.Component  {
 			<div>
 				<SearchBar/>
                         </div>
-
+				<Switch>
 				<Route path="/Home" component={Home}/>
 				<Route path="/Music" component={Music}/>
 				<Route path="/Sign_In" component={Sign_In}/>
@@ -32,8 +72,12 @@ class App extends React.Component  {
 				<Route path="/News" component={News}/>
 				<Route path="/Books" component={Books}/>
 				<Route path="/Blog" component={Blog}/>
+                                <PrivateRoute path='/Blog' component={Blog} />
 				<Route path="/Audio_Books" component={Audio_Books}/>
 				<Route path="/Mailing_List" component={Mailing_List}/>
+				<Route path="/" component={Home}/>
+				<Route component={NoMatch} /> 
+				</Switch>
 			</Router>
 		</div>
   		);
