@@ -53,16 +53,17 @@ export class Sign_In extends Component {
         }
 	render(){
 
-          let button;
+          let button_or_form;
 	  console.log(this.state.authenticated);		
 	  if ( this.state.authenticated ){
-	       button = <button className="Sing_Out_Button" onClick={this.handleSignOutButton}> Sign Out </button>
+	       button_or_form = <div>
+				<h2> User Authenticated </h2>
+				<button className="Sing_Out_Button" onClick={this.handleSignOutButton}> Sign Out </button>
+				</div>
 	   } else {
-		button = <h2> User is not Authenticated </h2>
-	   }
-	   return (
-		<div className="Sign_In">
-		        {button}	
+	       button_or_form =
+			<div> 
+			<h2> User is not Authenticated </h2>
 			<form onSubmit={this.handleSubmit}>
 				<h3> Sign In to access account.</h3>
 				<br/>
@@ -74,7 +75,12 @@ export class Sign_In extends Component {
 				</label>
 				<input type="submit" value="Submit" />
 				
-			</form>	
+			</form>
+			</div>	
+	   }
+	   return (
+		<div className="Sign_In">
+		        {button_or_form}	
                 </div>
 	    );
 	}
