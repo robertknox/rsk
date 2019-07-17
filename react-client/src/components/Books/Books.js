@@ -2,6 +2,7 @@ import React from 'react';
 import './Books.css';
 import './BBBCover.png';
 import './BBB3.jpg';
+import {NavLink} from 'react-router-dom';
 
 
 export class Books  extends React.Component {
@@ -10,8 +11,7 @@ export class Books  extends React.Component {
 
 	render(){
 
-		let art = [ 'jumper',  'red', 'medium', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' ];
-
+		let art = [ 'Barcelona, The Beautiful Bones',  'San Francisco, Sirens In The Ferns' ];
 		let  test = art[1];
 
 		return (
@@ -23,7 +23,9 @@ export class Books  extends React.Component {
 				{art.map((item) => (
 					<div className="ABook">
 					<h1>{item} </h1>
+					<NavLink to="/Music">	
 					<img src={require('./BBBCover.png')} />
+					</NavLink>
 					</div>
 					))} 
 				</div>
