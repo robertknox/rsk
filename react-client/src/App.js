@@ -5,6 +5,7 @@ import {Home} from './components/Home/Home.js'
 import {Sign_In} from './components/Sign_In/Sign_In.js'
 import {Music} from './components/Music/Music.js'
 import {Books} from './components/Books/Books.js'
+import {ABook} from './components/ABook/ABook.js';
 import {News} from './components/News/News.js'
 import {Audio_Books} from './components/Audio_Books/Audio_Books.js'
 import {Blog} from './components/Blog/Blog.js'
@@ -61,23 +62,14 @@ class App extends React.Component  {
   		return (
                 <div className="App">
 			<Router >
-			<div>
-				<SearchBar/>
-                        </div>
-				<Switch>
-				<Route path="/Home" component={Home}/>
-				<Route path="/Music" component={Music}/>
-				<Route path="/Sign_In" component={Sign_In}/>
-				<Route path="/Author" component={Author}/>
-				<Route path="/News" component={News}/>
-				<Route path="/Books" component={Books}/>
-				<Route path="/Blog" component={Blog}/>
-                                <PrivateRoute path='/Blog' component={Blog} />
-				<Route path="/Audio_Books" component={Audio_Books}/>
-				<Route path="/Mailing_List" component={Mailing_List}/>
-				<Route path="/" component={Home}/>
-				<Route component={NoMatch} /> 
-				</Switch>
+				<Route path="/" component={SearchBar}/>
+				<Route path="/Home" name="ABook"  component={Home} />
+				<Route path="/Music" name="ABook"  component={Music} />
+				<Route path="/News" name="News"  component={News} />
+				<Route path="/Author" name="ABook"  component={Author} />
+				<Route path="/Audio-Books" name="Audio-Books"  component={Audio-Books} />
+				<Route path="/ABook/:bookName" name="ABook"  component={ABook} />
+				<Route path="/Books" name="Books"  component={Books} />
 			</Router>
 		</div>
   		);
