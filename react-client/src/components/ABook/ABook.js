@@ -9,16 +9,12 @@ export class ABook  extends React.Component {
 
 
 	render(){
-		let BookName = this.props.location.state.BookName;
-		let BookDesc = this.props.location.state.BookDesc; 
-		let item = "Barcelona The Beautiful Bones";
+		let item     = this.props.location.state.Book;
 		return (
 			<div className="ABook">
-				ABooks.
-				Barcelona, The Beautiful Bones can be puchased at amazon.com in both e-book and hardcopy.
 				<div className="TheBook">
-					<h1>{BookName}</h1>
-					<h3>{BookDesc}</h3>
+					<h1>{item.BookName}</h1>
+					<h3>{item.BookDesc}</h3>
 					<img src={require('./BBBCover.png')} />
 				</div>
 			</div>
