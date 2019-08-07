@@ -6,10 +6,23 @@ export class Audio_Books extends React.Component {
 
 
 	render(){
+
+		let a_books_array = [{
+			audio_book_title: "foo",
+			audio_bood_desc:  "Blah blah",	
+		},
+		{
+			audio_book_title: "foo2",
+			audio_book_desc: "blah blah blah",
+		},
+		{
+			audio_book_title: "foo",
+			audio_book_desc:  "Blah blah",	
+		}];
+
 		return (
 			<div className="Audio_Books">
-				Audio_Books
-				Look for the Audio book of Barcelona, The Beautiful Bones, available from audible.com. Also, the audio book of San Francisco, Sirens In The Ferns, will be available on audibile.com shortly.
+				<h1> Audio Books </h1>
 			</div>
 
 		)
