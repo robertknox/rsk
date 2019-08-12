@@ -9,7 +9,7 @@ export class ABook  extends React.Component {
 
 
 	render(){
-		let item     = this.props.location.state.Book;
+		let item  = this.props.location.state.Book;
 		return (
 			<div className="ABook">
 				<div className="TheBook">

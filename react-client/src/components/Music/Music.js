@@ -4,9 +4,14 @@ import './Music.css';
 
 export class Music extends React.Component {
 	render(){
+
+	   let music_array = [{title: "Barraca Leblon"},
+		{title: "Reaching Back to ScottLand"},
+		{title: "Rock and Roll -- A long time ago."}
+	   ];
 	   return (
 		<div className="Music">
-			Music. Accompning each book in the Cities series is a CD the provides the musical backdrop to each chapter in the books. 
+		       <h1>Music CDs Available</h1>
                 </div>
 	    );
 	}
