@@ -13,12 +13,14 @@ export class Music extends React.Component {
 	   return (
 		<div className="Music">
 		       <h1>Music CDs Available</h1>
+			<div className="CDs" >
 			{music_array.map((item) => (
-				<div class="A_CD">			
+				<div className="CD">			
 				<h2>{ item.title} </h2>
 				<img src={require("./BBBCover.png")}/>
 				</div>
 			))}
+			</div>
                 </div>
 	    );
 	}
