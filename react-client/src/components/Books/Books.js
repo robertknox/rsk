@@ -35,7 +35,8 @@ export class Books  extends React.Component {
 							BookDesc: item.BookDesc,
 							Book: item
 							}
-						}} params={{bookName: "BBB"}} >	
+						}}
+						params={{bookName: "BBB"}} >	
 					<img src={require('./BBBCover.png')} />
 					</Link>
 					</div>

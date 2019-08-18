@@ -4,7 +4,7 @@ import './App.css';
 import {Home} from './components/Home/Home.js'
 import {Sign_In} from './components/Sign_In/Sign_In.js'
 import {Music} from './components/Music/Music.js'
-import {AMusic} from './components/AMusic/AMusic.js'
+import {CD} from './components/CD/CD.js'
 import {Books} from './components/Books/Books.js'
 import {ABook} from './components/ABook/ABook.js';
 import {News} from './components/News/News.js'
@@ -70,7 +70,7 @@ class App extends React.Component  {
 				<Route path="/Author" name="ABook"  component={Author} />
 				<Route path="/Audio_Books" name="Audio_Books"  component={Audio_Books} />
 				<Route path="/ABook/:bookName" name="ABook"  component={ABook} />
-				<Route path="/AMusic/:songName" name="AMusic" component={AMusic} />
+				<Route path="/CD/:CDName" name="CDName" component={CD} />
 				<Route path="/Books" name="Books"  component={Books} />
 			</Router>
 		</div>

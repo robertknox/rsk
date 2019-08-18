@@ -1,13 +1,14 @@
 import React from 'react';
 import './Music.css';
+import {Link} from 'react-router-dom';
 
 
 export class Music extends React.Component {
 	render(){
 
 	   let music_array = [{title: "Barraca Leblon"},
-		{title: "Reaching Back to ScottLand"},
-		{title: "Rock And Roll -- A roll and a rock."}, 
+		{title: "Reaching Back to ScottLand", CDName:"test"},
+		{title: "Rock And Roll -- A Roll And A Rock.",CDName:"test"}, 
 	   ];
 
 	   return (
@@ -15,9 +16,14 @@ export class Music extends React.Component {
 		       <h1>Music CDs Available</h1>
 			<div className="CDs" >
 			{music_array.map((item) => (
-				<div className="CD">			
-				<h2>{ item.title} </h2>
-				<img src={require("./BBBCover.png")}/>
+				<div className="CD">
+				<Link to={{
+					pathname:"/CD/" + item.CDName 
+					 }} params={{CDName: "test"}} >			
+					<h2>{item.title} </h2>
+					<img src={require("./BBBCover.png")}
+					params={{CDName:"BBB"}}/>
+				</Link>
 				</div>
 			))}
 			</div>
