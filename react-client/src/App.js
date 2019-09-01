@@ -9,6 +9,7 @@ import {Books} from './components/Books/Books.js'
 import {ABook} from './components/ABook/ABook.js';
 import {News} from './components/News/News.js'
 import {Audio_Books} from './components/Audio_Books/Audio_Books.js'
+import {Audio_Book} from './components/Audio_Book/Audio_Book.js'
 import {Blog} from './components/Blog/Blog.js'
 import {Mailing_List} from './components/Mailing_List/Mailing_List.js'
 import {Author} from './components/Author/Author.js'
@@ -69,6 +70,7 @@ class App extends React.Component  {
 				<Route path="/News" name="News"  component={News} />
 				<Route path="/Author" name="ABook"  component={Author} />
 				<Route path="/Audio_Books" name="Audio_Books"  component={Audio_Books} />
+				<Route path="/Audio_Book" name="Audio_Book"  component={Audio_Book} />
 				<Route path="/ABook/:bookName" name="ABook"  component={ABook} />
 				<Route path="/CD/:CDName" name="CDName" component={CD} />
 				<Route path="/Books" name="Books"  component={Books} />

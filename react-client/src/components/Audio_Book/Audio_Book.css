@@ -1,0 +1,21 @@
+.Audio_Book_Title {
+	background-color: black;
+	color: white;		
+}
+
+.Audio_Book {
+  color: white;
+  background-color: black;
+  padding: 30px;
+}
+
+
+.Audio_Book img {
+	margin-left: 20px;
+        margin-right: 20px;
+        width: 120px;
+        height: 120px;
+        padding: 50px;
+}
+
+

@@ -2,11 +2,10 @@ import React from 'react';
 import './ABook.css';
 import './BBBCover.png';
 import './BBB3.jpg';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 export class ABook  extends React.Component {
-
 
 	render(){
 		let item  = this.props.location.state.Book;
@@ -15,11 +14,11 @@ export class ABook  extends React.Component {
 				<div className="TheBook">
 					<h1>{item.BookName}</h1>
 					<h3>{item.BookDesc}</h3>
-					<img src={require('./BBBCover.png')} />
+					<img src={ require('./BBBCover.png') } />
 				</div>
 			</div>
 		)
 	}
 }
 
-export default ABook 
+export default ABook; 
